@@ -1,0 +1,413 @@
+From 937d20f4c20400758727bbc88c20f4cddd9ca0c8 Mon Sep 17 00:00:00 2001
+From: Kavya Krishnamurthy <kavyakmurthy91@gmail.com>
+Date: Mon, 11 Dec 2023 17:05:31 -0500
+Subject: [PATCH] create patch file
+
+---
+ .idea/.gitignore                              |   0
+ .idea/.name                                   |   1 +
+ .idea/JP-Morgan-task-1.iml                    |   8 +
+ .../inspectionProfiles/profiles_settings.xml  |   6 +
+ .idea/misc.xml                                |   7 +
+ .idea/modules.xml                             |   8 +
+ .idea/vcs.xml                                 |   6 +
+ .idea/workspace.xml                           | 147 ++++++++++++++++++
+ Task1 By Kavya.patch                          |  44 ++++++
+ __pycache__/client_test.cpython-312.pyc       | Bin 0 -> 1855 bytes
+ client3.py                                    |   9 +-
+ client_test.py                                |   7 +-
+ main                                          |   0
+ 13 files changed, 240 insertions(+), 3 deletions(-)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/.name
+ create mode 100644 .idea/JP-Morgan-task-1.iml
+ create mode 100644 .idea/inspectionProfiles/profiles_settings.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 .idea/workspace.xml
+ create mode 100644 Task1 By Kavya.patch
+ create mode 100644 __pycache__/client_test.cpython-312.pyc
+ create mode 100644 main
+
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+index 0000000..e69de29
+diff --git a/.idea/.name b/.idea/.name
+new file mode 100644
+index 0000000..356d153
+--- /dev/null
++++ b/.idea/.name
+@@ -0,0 +1 @@
++.name
+\ No newline at end of file
+diff --git a/.idea/JP-Morgan-task-1.iml b/.idea/JP-Morgan-task-1.iml
+new file mode 100644
+index 0000000..f571432
+--- /dev/null
++++ b/.idea/JP-Morgan-task-1.iml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="jdk" jdkName="Python 3.12" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+index 0000000..105ce2d
+--- /dev/null
++++ b/.idea/inspectionProfiles/profiles_settings.xml
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+index 0000000..db8786c
+--- /dev/null
++++ b/.idea/misc.xml
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Black">
++    <option name="sdkName" value="Python 3.12" />
++  </component>
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+index 0000000..1e0c20d
+--- /dev/null
++++ b/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/JP-Morgan-task-1.iml" filepath="$PROJECT_DIR$/.idea/JP-Morgan-task-1.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+index 0000000..35eb1dd
+--- /dev/null
++++ b/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+index 0000000..c3a8a59
+--- /dev/null
++++ b/.idea/workspace.xml
+@@ -0,0 +1,147 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
++  <component name="ChangeListManager">
++    <list default="true" id="8cb9509d-e852-429f-b658-0fd70dc50b2b" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/JP-Morgan-task-1.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Task1 By Kavya.patch" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/main" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/client3.py" beforeDir="false" afterPath="$PROJECT_DIR$/client3.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/client_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/client_test.py" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 7
++}</component>
++  <component name="ProjectId" id="2ZPSSE7XldoIc2t3X96WqMaLv6C" />
++  <component name="ProjectLevelVcsManager">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "ASKED_ADD_EXTERNAL_FILES": "true",
++    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "Python tests.Python tests in client_test.py.executor": "Run",
++    "Python.client3.executor": "Run",
++    "Python.server3.executor": "Run",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "git-widget-placeholder": "main",
++    "last_opened_file_path": "/Users/kavyadeepak/Documents/GitHub/JP-Morgan-task-1",
++    "nodejs_package_manager_path": "npm",
++    "vue.rearranger.settings.migration": "true"
++  }
++}]]></component>
++  <component name="RunManager" selected="Python.client3">
++    <configuration name="client3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++      <module name="JP-Morgan-task-1" />
++      <option name="ENV_FILES" value="" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client3.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
++    <configuration name="server3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++      <module name="JP-Morgan-task-1" />
++      <option name="ENV_FILES" value="" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server3.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
++    <configuration name="Python tests in client_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
++      <module name="JP-Morgan-task-1" />
++      <option name="ENV_FILES" value="" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <option name="_new_additionalArguments" value="&quot;&quot;" />
++      <option name="_new_target" value="&quot;$PROJECT_DIR$/client_test.py&quot;" />
++      <option name="_new_targetType" value="&quot;PATH&quot;" />
++      <method v="2" />
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Python.client3" />
++        <item itemvalue="Python tests.Python tests in client_test.py" />
++        <item itemvalue="Python.server3" />
++      </list>
++    </recent_temporary>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="8cb9509d-e852-429f-b658-0fd70dc50b2b" name="Changes" comment="" />
++      <created>1702322219485</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1702322219485</updated>
++      <workItem from="1702322222114" duration="9000" />
++      <workItem from="1702322244901" duration="10000" />
++      <workItem from="1702322319531" duration="2000" />
++      <workItem from="1702322445462" duration="9000" />
++    </task>
++    <servers />
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
++  <component name="VcsManagerConfiguration">
++    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/Task1 By Kavya.patch b/Task1 By Kavya.patch
+new file mode 100644
+index 0000000..723a78f
+--- /dev/null
++++ b/Task1 By Kavya.patch	
+@@ -0,0 +1,44 @@
++From 879221fec2b863d37d5b493f02a530a8098ef6ef Mon Sep 17 00:00:00 2001
++From: Joe Ferrer <joe@theforage.com>
++Date: Wed, 1 Mar 2023 00:11:51 +1100
++Subject: [PATCH] Re-add sample unit test
++
++---
++ client_test.py | 25 +++++++++++++++++++++++++
++ 1 file changed, 25 insertions(+)
++ create mode 100644 client_test.py
++
++diff --git a/client_test.py b/client_test.py
++new file mode 100644
++index 0000000..af2bf26
++--- /dev/null
+++++ b/client_test.py
++@@ -0,0 +1,25 @@
+++import unittest
+++from client3 import getDataPoint
+++
+++class ClientTest(unittest.TestCase):
+++  def test_getDataPoint_calculatePrice(self):
+++    quotes = [
+++      {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+++      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+++    ]
+++    """ ------------ Add the assertion below ------------ """
+++
+++  def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+++    quotes = [
+++      {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+++      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+++    ]
+++    """ ------------ Add the assertion below ------------ """
+++
+++
+++  """ ------------ Add more unit tests ------------ """
+++
+++
+++
+++if __name__ == '__main__':
+++    unittest.main()
++-- 
++2.39.3 (Apple Git-145)
++
+diff --git a/__pycache__/client_test.cpython-312.pyc b/__pycache__/client_test.cpython-312.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..34bf1cf7d56623d35486ff04c0991bee17c28c20
+GIT binary patch
+literal 1855
+zcmd^AO-vhC5T1RzYn%U=@RLxKQraqY69YC$93m3&V*{yx5{U@K3SBLJi*fv$-E|^c
+zM4~FFIrPv&rCf685rkCb$gxMHQpwvMg0`yKst1JHg9GV>Q)kwWO43$Q&wY}=nR)Z`
+zX5P*`f78%V3%E+3+}BJOz^^2{SaOv)%pvm#IB+2aQKBp*q*;^+z+fD>xC&g-;12q~
+zx;DkiPE^ulE+^ju(3=^cZT+j30Grh<0SZDv@VWL$p7sfLeOxocs;SOo6B#ph+)=0s
+zho_KvgmI$+hbZI1Dnv!j5T%0XlkD2jR6@&`vzlSXUigqJ)lL~6?jT@=0%u%&%(%p5
+z?s7Oc_wbs>GOy)zRZTr_sA?KX6K4;E8dw&>Fh2tDfGxwF<0oKTT4wbg0G8QiRlm%5
+z(`nQpJwcRvt5Wkz(!c78<a4rE2e2q@G8AwL@L5=b0{B{{<KOP!n*3;J{~c6pFk8;)
+ziI`?fMxv-4bp-nY1OC3CKM?2&2Cwv8y3*g*b1@XWaIt^y&9&cdY@I>JG&&wN_Von%
+z1_nYGE)9f2p@1z8kBn}}w%g3+6xB%DHD)4>_o}9ImA!=ow;BFq!_3B#d%t6-wIl|U
+zFxcM2FU6Lx?#~bH-$2P0!;vw)6*>JRK@EWyVV|nOjO$dx&~!6$H?O92y1@+*)7Mgq
+zw(D*_YifoqS19Say1I@=dvBtH(VJB76;!TiIW^fE&c^a-{P;%ic*2~>FZ6ye<Dbgv
+zaW&&NF@JxcH|8{lg7M6rT*2-lMmgSdN=!|~@+sBSX6Oow=l*J^p4S=E5FP%6umV4K
+zzO^2-ntMuDZ<TWQ$^gSG%$@<ng$P4wip>*QVrklRXV`9M_xkY5_M;X1Fd0s=+eG3l
+z<=CfLSr!{zD`RC3$k%qg?FYc*CE=mG>#BX~YO`EzUo3wa`M&-A^~jU68`E2nuYK0w
+z<o293c(XKjyEMOO&BaSgS!*u0>kmE|u>4oI;+B7GyLG!@UB6X|s@C-d%fC?Knsr_)
+zi^BQ1@COL)CE=M!=Nw{*@IM=_o%tc%jb-Z|0vtrp>0Q$s2pS2R2u={R5wsJ~Tcy*8
+z>m3CD(Es`yr066#gJ4wKTkl4}4!o}8MiP8n*RWaj*(EhIY$S_=|Dj+1=IxX~Pl*05
+z!n9AeJ&KZ1)0(2#wThC?@_dT;dPSi*t!VVO$>A)*M#ay`U8iAifF1*bhJF<em`7X^
+z4q6DyEg)WY&T*{hq_mpID2mT*d-9otNwwSV%E0zJPlD~4#l2A#=iZ5qe=%T7<fWgZ
+z(<o`@@FUM)CD&_u0Qcw-HbMy4%7X9%H2nx&&!tx3^5>_Xdb=%e_j5p@90aNUVevch
+X^seMxnfP?-<Ega|%OXe}PT)TQB&o!F
+
+literal 0
+HcmV?d00001
+
+diff --git a/client3.py b/client3.py
+index 3fc09b7..b40d73c 100644
+--- a/client3.py
++++ b/client3.py
+@@ -35,14 +35,16 @@ def getDataPoint(quote):
+     stock = quote['stock']
+     bid_price = float(quote['top_bid']['price'])
+     ask_price = float(quote['top_ask']['price'])
+-    price = bid_price
++    price = (bid_price + ask_price)/2
+     return stock, bid_price, ask_price, price
+ 
+ 
+ def getRatio(price_a, price_b):
+     """ Get ratio of price_a and price_b """
+     """ ------------- Update this function ------------- """
+-    return 1
++    if(price == 0):
++        return
++    return price_a/price_b
+ 
+ 
+ # Main
+@@ -52,8 +54,11 @@ if __name__ == "__main__":
+         quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+ 
+         """ ----------- Update to get the ratio --------------- """
++        prices = {}
+         for quote in quotes:
+             stock, bid_price, ask_price, price = getDataPoint(quote)
+             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+ 
+         print("Ratio %s" % getRatio(price, price))
++        print("Ratio %s" % getRatio(prices['ABC'], prices['DEF']))
++
+diff --git a/client_test.py b/client_test.py
+index af2bf26..47fbd93 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -8,6 +8,9 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+     """ ------------ Add the assertion below ------------ """
++    for quote in quotes:
++      self.assertEqual(getDataPoint(quote),(quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'],
++                                            (quote['top_bid']['price'] + quote['top_ask']['price'])/2))
+ 
+   def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+     quotes = [
+@@ -15,7 +18,9 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+     """ ------------ Add the assertion below ------------ """
+-
++    for quote in quotes:
++      self.assertEqual(getDataPoint(quote),(quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'],
++                                            (quote['top_bid']['price'] + quote['top_ask']['price'])/2))
+ 
+   """ ------------ Add more unit tests ------------ """
+ 
+diff --git a/main b/main
+new file mode 100644
+index 0000000..e69de29
+-- 
+2.39.3 (Apple Git-145)
+
